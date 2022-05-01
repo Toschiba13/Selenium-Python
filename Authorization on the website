@@ -1,0 +1,15 @@
+from selenium import webdriver
+
+#driver.get("https://www.google.com/")
+#driver.implicitly_wait(1)
+#driver.find_element_by_name("q").send_keys("webdriver")
+#driver.find_element_by_name("btnK").click()
+#driver.find_elements_by_css_selector("body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.FPdoLc.lJ9FBc > center > input.gNO89b").click()
+
+driver = webdriver.Chrome()
+driver.get("http://test2.itcobra.ru/")
+driver.implicitly_wait(3)
+driver.find_element_by_xpath("/html/body/div[3]/div[1]/header/div[1]/div/div/div/div[5]/div/div/a/span/span").click()
+driver.find_element_by_name("USER_LOGIN").send_keys("moros_sa@mail.ru")
+driver.find_element_by_name("USER_PASSWORD").send_keys("karaganda1313")
+driver.find_element_by_name("Login").click()
